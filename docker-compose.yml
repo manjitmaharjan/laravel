@@ -4,7 +4,7 @@ services:
   test:
     image: test
     container_name: test
-    network_mode: bridge
+    network_mode: test
     build: .
     environment:
       - .env.example
