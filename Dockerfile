@@ -2,7 +2,8 @@ FROM composer:1.9.3 as vendor
 
 WORKDIR /tmp/
 
-COPY composer.json composer.lock ./
+COPY composer.json composer.json
+COPY composer.lock composer.lock
 
 
 RUN composer install \
