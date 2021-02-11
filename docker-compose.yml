@@ -1,0 +1,16 @@
+version: "3.7"
+
+services:
+  test:
+    image: test
+    container_name: test
+    network_mode: bridge
+    build: .
+    #volumes:
+      #  - "./nginx/conf.d/:/etc/nginx/conf.d/"
+     # - "./nginx/logs:/var/log/nginx"
+    #   - "./nginx/ssl:/etc/nginx/ssl"
+    restart: always
+    ports:
+      - 80:80
+    #   - 443:443
